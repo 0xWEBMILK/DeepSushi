@@ -1,10 +1,7 @@
-# 🍣 Deep Sushi
-
 <img src="./assets/header.png">
 
 A full-stack application for ordering and delivering sushi, combining a **React.js** front end with a **Flask** back end. This project provides an intuitive user experience to browse, order, and track sushi deliveries in real-time.
 
----
 
 ## 📝 Features
 
@@ -29,7 +26,7 @@ A full-stack application for ordering and delivering sushi, combining a **React.
 ## 📂 Project Structure
 
 ```plaintext
-sushi-delivery-app/
+deepusushi/
 ├── frontend/              # React Front-End
 │   ├── public/
 │   ├── src/
