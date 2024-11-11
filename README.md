@@ -26,7 +26,7 @@ A full-stack application for ordering and delivering sushi, combining a **React.
 ## 📂 Project Structure
 
 ```plaintext
-sushi-delivery-app/
+deepusushi/
 ├── frontend/              # React Front-End
 │   ├── public/
 │   ├── src/
