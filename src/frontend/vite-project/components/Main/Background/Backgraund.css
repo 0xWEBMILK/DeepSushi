@@ -1,0 +1,38 @@
+.background {
+  background-image: url("../../Images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 99.3vw;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.background__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 343px;
+  padding-bottom: 693px;
+}
+
+.background__titel {
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #c31b30;
+  }
+}
+
+.background__description {
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+}
