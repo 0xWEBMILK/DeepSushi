@@ -28,6 +28,7 @@ class LoggingSettings(BaseModel):
 class ServerSettings(BaseModel):
     host: SecretStr = SecretStr(config('HOST'))
     port: SecretStr = SecretStr(config('PORT'))
+    debug: bool = config('DEBUG', default=False, cast=bool)
 
 class AuthSettings(BaseModel):
     secret: SecretStr = SecretStr(config('AUTH_SECRET'))
