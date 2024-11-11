@@ -1,0 +1,94 @@
+.present {
+  background-color: #000;
+}
+
+.present__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.present__text {
+  text-align: end;
+}
+
+.present__titel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.present__description {
+  font-size: 11px;
+  color: #bdbdbd;
+}
+
+.present__form__text {
+  display: flex;
+  gap: 1;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.present__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.present__form__description {
+  max-width: 342px;
+}
+
+.inputs {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.present__form__input {
+  background-color: #fff;
+  padding: 7px 16px;
+  border-radius: 2px;
+}
+
+.present__form__input::placeholder {
+  font-size: 15px;
+  color: #999999;
+  font-weight: 300;
+}
+
+.present__form__btn {
+  background-color: #c31b30;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  font-size: 19px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #dd2036;
+  }
+}
+
+.present__form__description {
+  color: #fff;
+  font-size: 10px;
+}
+
+.present__form__link {
+  font-size: 10px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: none;
+  }
+}
