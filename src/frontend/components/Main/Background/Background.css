@@ -1,12 +1,12 @@
+/* TODO: Change background text font */
+
 .background {
   background-image: url("../../Images/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 99.3vw;
-  height: auto;
   overflow: hidden;
-  object-fit: cover;
 }
 
 .background__text {
@@ -18,7 +18,7 @@
   padding-bottom: 693px;
 }
 
-.background__titel {
+.background__title {
   text-align: center;
   font-size: 36px;
   line-height: 36px;

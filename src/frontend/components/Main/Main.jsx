@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main className="main">
       <Background
-        titel={"25 лет держим палочки!"}
+        title={"25 лет держим палочки!"}
         description={"Давайте отмечать вместе!"}
       />
       <Present />
