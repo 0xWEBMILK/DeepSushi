@@ -3,7 +3,7 @@ import sys
 import json
 from .config_setup import log_settings
 
-# JSON логгер
+# JSON logger
 class JsonFormatter(logging.Formatter):
     def format(self, record):
         log_record = {
@@ -15,7 +15,7 @@ class JsonFormatter(logging.Formatter):
         }
         return json.dumps(log_record)
 
-# Установка логгера в зависимости от настроек
+# Setting the logger depending on the settings
 def setup_logger():
     logger = logging.getLogger()
     logger.setLevel(log_settings.level)
@@ -31,7 +31,7 @@ def setup_logger():
     
     logger.addHandler(handler)
 
-    # Логирование необработанных исключений
+    # Logging raw exceptions
     if log_settings.log_unhandled:
         def handle_exception(exc_type, exc_value, exc_traceback):
             if issubclass(exc_type, KeyboardInterrupt):
@@ -43,5 +43,5 @@ def setup_logger():
 
     return logger
 
-# Инициализация логгера
+# Logger initialising
 logger = setup_logger()

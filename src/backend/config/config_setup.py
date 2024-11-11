@@ -2,7 +2,7 @@ from pydantic import BaseModel, SecretStr
 from decouple import config
 from enum import Enum
 
-# Logs settings
+# Logging settings
 class ModeEnum(str, Enum):
     DEVELOPMENT = "dev"
     PRODUCTION = "prod"
@@ -30,6 +30,7 @@ class ServerSettings(BaseModel):
     port: SecretStr = SecretStr(config('PORT'))
     debug: bool = config('DEBUG', default=False, cast=bool)
 
+# Auth settings
 class AuthSettings(BaseModel):
     secret: SecretStr = SecretStr(config('AUTH_SECRET'))
 

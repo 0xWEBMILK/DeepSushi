@@ -4,7 +4,7 @@ from backend.config import main_settings
 
 from backend.app.routes.ping import bp as ping
 
-from flask import Flask, render_template, request
+from flask import Flask
 
 
 async def main(*args, **kwargs) -> None:

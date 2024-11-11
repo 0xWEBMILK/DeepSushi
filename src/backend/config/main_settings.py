@@ -1,6 +1,6 @@
 from .config_setup import main_settings
 
-def get_all_settings():
+def get_all_settings() -> dict:
     return {
         "server": {
             "host": main_settings.server.host.get_secret_value(),
