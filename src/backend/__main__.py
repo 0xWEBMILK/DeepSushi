@@ -23,9 +23,11 @@ async def main(*args, **kwargs) -> None:
     app.register_blueprint(ping)
     logger.info("Initializing routes | Successful")
 
+    logger.info("Starting server | Started")
     app.run(host=server_config["host"],
             port=server_config["port"],
             debug=server_config["debug"])
+    logger.info("Starting server | Successful")
 
 
 if __name__ == "__main__":
