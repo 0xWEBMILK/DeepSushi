@@ -1,0 +1,19 @@
+.footer__nav__text {
+  color: #888888;
+  font-size: 13ppx;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.footer__mobile__apps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer__mobile__app {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

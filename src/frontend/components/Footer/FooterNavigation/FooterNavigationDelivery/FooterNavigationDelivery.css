@@ -1,0 +1,31 @@
+.footer__list__delivery__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__delivery__titel {
+  color: #888888;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer__item__delivery__list__link {
+  color: #c0c0c0;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 300;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #c31b30;
+  }
+}
+
+.margin {
+  margin-bottom: 18px;
+}
+
+.margin2 {
+  margin-bottom: 31px;
+}
