@@ -1,0 +1,16 @@
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  transition: color 0.2s ease-in-out;
+  border-bottom: 1px solid #2b2d2f;
+  padding-top: 1px;
+  padding-left: 16px;
+
+  &:hover {
+    color: #ffff00;
+  }
+}

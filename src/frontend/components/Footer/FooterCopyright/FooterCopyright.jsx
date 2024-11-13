@@ -19,7 +19,7 @@ const FooterCopyright = () => {
               <img
                 className="footer__copyright__messenger__vk__img "
                 src={vk}
-                alt="vk"
+                alt="Вконтакте"
               />
             </a>
           </div>
@@ -28,7 +28,7 @@ const FooterCopyright = () => {
               <img
                 className="footer__copyright__messenger__tg"
                 src={tg}
-                alt="telegram"
+                alt="Телеграмм"
               />
             </a>
           </div>

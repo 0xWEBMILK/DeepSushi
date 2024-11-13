@@ -17,7 +17,7 @@ const FooterNavigationDelivery = () => {
           <li key={item.id} className={item.className || ""}>
             <a className="footer__item__delivery__list__link" href="#">
               {item.img ? (
-                <img src={item.img} alt="mobile version" />
+                <img src={item.img} alt="мобильная версия" />
               ) : (
                 item.text
               )}

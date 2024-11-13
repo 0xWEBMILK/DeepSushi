@@ -1,0 +1,10 @@
+.deliveri__menu {
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+
+.deliveri__menu__list {
+  background-color: #1f1f20;
+  max-width: 280px;
+}
