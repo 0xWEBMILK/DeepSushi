@@ -15,6 +15,7 @@ import sideBarImgFourteen from "../../../Images/sidebar-14.png";
 import sideBarImgFifteen from "../../../Images/sidebar-15.png";
 
 import './SideBarItem.css'
+import { Link } from "react-router-dom";
 
 const deliveryList = [
     {
@@ -64,10 +65,10 @@ const SiideBarItems = () => {
     <ul className="deliveri__menu__list">
       {deliveryList.map((item) => (
         <li key={item.id}>
-          <a className="sidebar__link" href="#">
+          <Link className="sidebar__link" to="/menu-dostavki">
             <img src={item.img} alt={item.alt} />
             <p className="sidebar__text">{item.text}</p>
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

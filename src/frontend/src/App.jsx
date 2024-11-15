@@ -1,11 +1,19 @@
-import Yakitoria from "./pages/yakitoria";
-import MenuDostavki from "../components/MenuDostavki/MenuDostavki";
+import YakitoriaPage from "./pages/Yakitoria/YakitoriaPage";
+import MenuDostavkiPage from "./pages/MenuDostavki/MenuDostavkiPage";
+import { Routes, Route } from "react-router-dom";
+import Layout from "../components/Layout/Layout";
 
 function App() {
   return (
     <>
-      <Yakitoria />
-      <MenuDostavki />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          {/* Главная страница */}
+          <Route index element={<YakitoriaPage />} />
+          {/* Страница "Меню Доставки" */}
+          <Route path="menu-dostavki" element={<MenuDostavkiPage />} />
+        </Route>
+      </Routes>
     </>
   );
 }

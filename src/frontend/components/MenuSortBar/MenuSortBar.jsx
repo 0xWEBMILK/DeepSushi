@@ -1,8 +1,9 @@
 import "./MenuSortBar.css";
 
-import plus from "../../../Images/plus.svg";
-import sort from "../../../Images/sort.svg";
-import reset from "../../../Images/reset.svg";
+import plus from "../../Images/plus.svg";
+import sort from "../../Images/sort.svg";
+import reset from "../../Images/reset.svg"
+
 
 const MenuSortBar = () => {
   return (

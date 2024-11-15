@@ -5,12 +5,15 @@ import AppGallery from "../../../Images/footer-3.png";
 import QR from "../../../Images/footer-4.png";
 
 import "./FooterNavigation.css";
+import { Link } from "react-router-dom";
 
 const FooterNavigation = () => {
   return (
     <>
       <div>
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <br />
       <p className="footer__nav__text">

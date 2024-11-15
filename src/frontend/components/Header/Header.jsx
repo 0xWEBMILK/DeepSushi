@@ -4,6 +4,7 @@ import Navigation from "./Navigation/Navigation";
 import Basket from "./Basket/Basket";
 
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,9 +12,9 @@ const Header = () => {
       <div className="container">
         <div className="header__content">
           <div className="logo__logo">
-            <a href="#">
+            <Link to="/">
               <img className="header__logo__img" src={logo} alt="logo" />
-            </a>
+            </Link>
           </div>
 
           <Navigation />
