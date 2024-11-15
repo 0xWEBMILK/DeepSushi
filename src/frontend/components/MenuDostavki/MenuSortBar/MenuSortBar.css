@@ -1,0 +1,51 @@
+.rolls__titel {
+    color: #fff;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+
+.rools__sort__left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.rools__sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 22px;
+    background-color: #15171C;
+}
+
+.rools__sort_filter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 16px;
+    border-right: 1px solid #393E48;
+}
+
+.rools__sort_filter__btn {
+    color: #fff;
+    font-size: 16px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rolls__sort__sort__link { 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+}
+
+.rolls__sort__reset__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #888888;
+}

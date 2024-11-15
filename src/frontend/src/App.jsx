@@ -1,15 +1,11 @@
-import Header from "../components/Header/Header";
-import Main from "../components/Main/Main";
-import Footer from "../components/Footer/Footer";
-import SideBar from "../components/SideBar/SideBar";
+import Yakitoria from "./pages/yakitoria";
+import MenuDostavki from "../components/MenuDostavki/MenuDostavki";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
-      <SideBar />
+      <Yakitoria />
+      <MenuDostavki />
     </>
   );
 }
