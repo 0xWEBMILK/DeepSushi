@@ -5,13 +5,13 @@ import "./Main.css";
 
 const Main = () => {
   return (
-    <main className="main">
+    <>
       <Background
         title={"25 лет держим палочки!"}
         description={"Давайте отмечать вместе!"}
       />
       <Present />
-    </main>
+    </>
   );
 };
 
