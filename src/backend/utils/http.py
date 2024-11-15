@@ -46,14 +46,14 @@ def bad_request(exception: Exception) -> ResponseType:
     return Response(response=str(exception), status=400)
 
 
-def not_found(resource: str) -> ResponseType:
+def not_found() -> ResponseType:
     """
     Helper function that returns an http status code 404.
 
     @param resource: Resource name that was not found.
     """
 
-    return Response(response=f'{resource} not found.'.capitalize(), status=404)
+    return Response(response=f'Not found.'.capitalize(), status=404)
 
 
 def not_allowed() -> ResponseType:

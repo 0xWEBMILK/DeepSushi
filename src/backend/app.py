@@ -1,7 +1,6 @@
 from flask import Flask
 from database.db import db
 from flask_cors import CORS
-from dotenv import load_dotenv
 
 from config.settings import config
 from config.logger_setup import logger
@@ -28,7 +27,6 @@ from blueprints.delivery_menu.sushi import sushi_blueprint
 from utils.http import bad_request, not_found, not_allowed, internal_error
 from utils.errors import BadRequestException
 
-load_dotenv() 
 
 def create_app():
     logger.info("Config initialising | Started")
@@ -81,7 +79,7 @@ def create_app():
     logger.info("Error 404 handler initialising | Started")
     @app.errorhandler(404)
     def route_not_found(e):
-        return not_found('route')
+        return not_found()
     logger.info("Error 404 handler initialising | Successful")
 
 
