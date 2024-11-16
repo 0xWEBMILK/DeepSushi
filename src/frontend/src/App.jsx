@@ -1,5 +1,5 @@
 import YakitoriaPage from "./pages/Yakitoria/YakitoriaPage";
-import MenuSortBar from "../components/MenuSortBar/MenuSortBar";
+import DeliveryMenu from "./pages/DeliveryMenu/DeliveryMenu";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 
@@ -11,7 +11,7 @@ function App() {
           {/* Главная страница */}
           <Route index element={<YakitoriaPage />} />
           {/* Страница "Меню Доставки" */}
-          <Route path="menu-dostavki" element={<MenuSortBar />} />
+          <Route path="menu-dostavki" element={<DeliveryMenu />} />
         </Route>
       </Routes>
     </>

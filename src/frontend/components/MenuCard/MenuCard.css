@@ -1,0 +1,58 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #888888;
+    padding: 2rem;
+}
+
+.card__images {
+    position: relative;
+    padding: 0 25px;
+}
+
+.card__img__event {
+    position: absolute;
+    left: -0.1rem;
+}
+
+.card__titel {
+    font-size: 1rem;
+    line-height: 27px;
+    color: #fff;
+}
+
+.card__description {
+    color: #888888;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__price__text {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.card__btn {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card__price__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__count {
+    color: #fff;
+    font-size: 2rem;
+}

@@ -6,10 +6,7 @@ import "./Main.css";
 const Main = () => {
   return (
     <>
-      <Background
-        title={"25 лет держим палочки!"}
-        description={"Давайте отмечать вместе!"}
-      />
+      <Background title={"25 лет держим палочки!"} description={"Давайте отмечать вместе!"} />
       <Present />
     </>
   );

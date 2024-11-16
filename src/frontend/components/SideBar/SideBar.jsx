@@ -1,5 +1,5 @@
 import SideBarInfo from "./SideBarInfo/SideBarInfo";
-import SiideBarItems from "./SideBarItem/SiideBarItems";
+import SideBarItems from "./SideBarItem/SideBarItems";
 import "./SideBar.css";
 
 const SideBar = () => {
@@ -8,7 +8,7 @@ const SideBar = () => {
       <div className="container">
         <div className="deliveri__menu">
           <SideBarInfo />
-          <SiideBarItems />
+          <SideBarItems />
         </div>
       </div>
     </>

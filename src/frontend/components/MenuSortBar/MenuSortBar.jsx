@@ -1,16 +1,20 @@
 import "./MenuSortBar.css";
+import MenuCard from "../MenuCard/MenuCard";
 
 import plus from "../../Images/plus.svg";
 import sort from "../../Images/sort.svg";
-import reset from "../../Images/reset.svg"
+import reset from "../../Images/reset.svg";
+import rollMaldivi from "../../Images/rollMaldivi.png";
+import imgNew from "../../Images/eventImg-1.svg";
 
+const MenuSortBar = (props) => {
+  const titel = props.titel;
 
-const MenuSortBar = () => {
   return (
     <>
       <div className="container">
         <section className="rolls">
-          <h1 className="rolls__titel">Роллы</h1>
+          <h1 className="rolls__titel">{titel}</h1>
           <div className="rools__sort">
             <div className="rools__sort__left">
               <div className="rools__sort_filter">
@@ -34,6 +38,24 @@ const MenuSortBar = () => {
               </a>
             </div>
           </div>
+          {/*----------------------------- КОСТЫЛИИИИ --------------------*/}
+          <div className="container__grid">
+            <MenuCard
+              img={rollMaldivi}
+              eventImg={imgNew}
+              titel="Мальдивы"
+              description="ролл с лососем и копченым угрем, сыр, авокадо, свежая клубника, трюфельное масло, ..."
+              priceText="687"
+            />
+            <MenuCard
+              img={rollMaldivi}
+              eventImg={imgNew}
+              titel="Мальдивы"
+              description="ролл с лососем и копченым угрем, сыр, авокадо, свежая клубника, трюфельное масло, ..."
+              priceText="687"
+            />
+          </div>
+          {/*----------------------------- КОСТЫЛИИИИ --------------------*/}
         </section>
       </div>
     </>
