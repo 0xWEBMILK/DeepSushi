@@ -118,7 +118,7 @@ def get_soup():
 
 
 @delivery_menu_blueprint.route('/sushi/', methods=['GET'])
-def get_subject():
+def get_sushi():
     list_of_subject = Sushi.query.all()
     subject_list = [subject.to_dict() for subject in list_of_subject]
     return jsonify(subject_list)
