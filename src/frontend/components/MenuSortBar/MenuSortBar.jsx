@@ -8,7 +8,7 @@ import reset from "../../Images/reset.svg";
 import imgNew from "../../Images/eventImg-1.svg";
 
 const MenuSortBar = (props) => {
-  const { title } = props;
+  const { titel } = props;
   const [sushiItems, setSushiItems] = useState([]);
 
   useEffect(() => {
@@ -23,11 +23,11 @@ const MenuSortBar = (props) => {
   return (
     <div className="container">
       <section className="rolls">
-        <h1 className="rolls__title">{title}</h1>
-        <div className="rolls__sort">
-          <div className="rolls__sort__left">
-            <div className="rolls__sort_filter">
-              <button className="rolls__sort_filter__btn">
+        <h1 className="rolls__titel">{titel}</h1>
+        <div className="rools__sort">
+          <div className="rools__sort__left">
+            <div className="rools__sort_filter">
+              <button className="rools__sort_filter__btn">
                 <img src={plus} alt="фильтр" />
                 Фильтр
               </button>
