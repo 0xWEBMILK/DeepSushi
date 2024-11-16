@@ -1,13 +1,18 @@
+.rolls {
+    padding-left: 19rem;
+}
+
 .rolls__titel {
     color: #fff;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
     margin-bottom: 32px;
+    padding-top: 2rem;
 }
 
 .rools__sort__left{
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -17,6 +22,7 @@
     justify-content: space-between;
     padding: 28px 22px;
     background-color: #15171C;
+    margin-bottom: 2rem;
 }
 
 .rools__sort_filter {
@@ -48,4 +54,9 @@
     align-items: center;
     gap: 8px;
     color: #888888;
+}
+
+.container__grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px, 1fr)) ;
 }
