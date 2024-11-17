@@ -12,11 +12,13 @@ from utils.http import bad_request, not_found, not_allowed, internal_error
 from utils.errors import BadRequestException
 
 
+
 def create_app():
     logger.info("Config initialising | Started")
     database_config = config['database']
     server_config = config['server']
     logger.info("Config initialising | Successful")
+
 
     logger.info("Model initialising | Started")
     app = Flask(__name__)
@@ -25,11 +27,13 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = database_config['sqlalchemy_track_modifications']
     logger.info("Model initialising | Successful")
 
+
     logger.info("App settings initialising | Started")
     app.url_map.strict_slashes = False
     db.init_app(app)
     CORS(app)
     logger.info("App settings initialising | Successful")
+
 
     logger.info("Blueprints initilising | Started")
     app.register_blueprint(default_blueprint, url_prefix=server_config['api_prefix'])

@@ -1,3 +1,4 @@
+
 import "./MenuSortBar.css";
 import MenuCard from "../MenuCard/MenuCard";
 
@@ -22,7 +23,8 @@ const MenuSortBar = (props) => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container"> 
+
       <h1 className="rolls__titel">{titel}</h1>
       <div className="rools__sort">
         <div className="rools__sort__left">
@@ -59,7 +61,9 @@ const MenuSortBar = (props) => {
           />
         ))}
       </div>
+      
     </div>
+   
   );
 };
 
