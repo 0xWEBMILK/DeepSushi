@@ -3,14 +3,10 @@ import "./MenuCard.css";
 
 const MenuCard = (props) => {
   const { img, eventImg, titel, description, priceText } = props;
+  
   const [count, setCount] = useState(1);
-
-  function increment() {
-    setCount((count) => count + 1);
-  }
-  function decrement() {
-    if (count > 1) return setCount((count) => count - 1);
-  }
+  const increment = () => setCount((prev) => prev + 1);
+  const decrement = () => setCount((prev) => (prev > 1 ? prev - 1 : prev));
 
   return (
     <div className="card">
