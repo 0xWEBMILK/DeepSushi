@@ -14,7 +14,7 @@ const MenuSortBar = (props) => {
   const [sushiItems, setSushiItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/")
+    fetch("http://localhost:9090/api/v1/")
       .then((response) => {
         console.log(response); // Inspect the response
         return response.json();

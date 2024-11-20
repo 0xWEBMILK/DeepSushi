@@ -6,7 +6,7 @@ const PromotionPage = () => {
   const [promotions, setPromotions] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/promotion") 
+    fetch("http://localhost:9090/api/v1/promotion") 
       .then((response) => {
         console.log(response);
         if (!response.ok) {
