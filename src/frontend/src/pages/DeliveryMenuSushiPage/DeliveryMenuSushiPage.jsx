@@ -4,7 +4,7 @@ const DeliveryMenuSushiPage = () => {
   return (
     <>
       <section className="rolls">
-        <MenuSortBar titel="Суси и Гунканы" />
+        <MenuSortBar titel="Суси и Гунканы" subject="sushi"/>
       </section>
     </>
   );

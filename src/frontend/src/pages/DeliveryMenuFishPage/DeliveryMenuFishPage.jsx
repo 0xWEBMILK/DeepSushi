@@ -5,7 +5,7 @@ const DeliveryMenuFishPage = () => {
     <>
         <section className="moreprodukty-i-ryba">
 
-            <MenuSortBar titel= "Горячее"/>
+            <MenuSortBar titel= "Горячее" subject="seafood"/>
         </section>
     </>
   )

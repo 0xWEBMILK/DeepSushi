@@ -5,7 +5,7 @@ const DeliveryMenuSoupPage = () => {
   return (
     <>
         <section className='supy'>
-            <MenuSortBar titel="Супы"/>
+            <MenuSortBar titel="Супы" subject="soup"/>
         </section>
     </>
   )

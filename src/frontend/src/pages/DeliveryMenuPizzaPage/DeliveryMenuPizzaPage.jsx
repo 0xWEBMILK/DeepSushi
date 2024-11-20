@@ -4,7 +4,7 @@ const DeliveryMenuPizzaPage = () => {
   return (
     <>
       <section className="pitstsa">
-        <MenuSortBar titel="Пицца и Бургеры" />
+        <MenuSortBar titel="Пицца и Бургеры" subject="pizza_burgers"/>
       </section>
     </>
   );

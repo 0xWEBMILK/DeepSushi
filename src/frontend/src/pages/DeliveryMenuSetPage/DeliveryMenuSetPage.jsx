@@ -4,7 +4,7 @@ const DeliveryMenuSetPage = () => {
   return (
     <>
         <section className="sety">
-            <MenuSortBar titel="Сеты"/>
+            <MenuSortBar titel="Сеты" subject="sets"/>
         </section>
     </>
   )

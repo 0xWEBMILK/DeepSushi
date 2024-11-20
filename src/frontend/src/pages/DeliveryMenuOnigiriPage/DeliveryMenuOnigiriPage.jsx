@@ -4,7 +4,7 @@ const DeliveryMenuOnigiriPage = () => {
   return (
     <>
       <section className="onigiri">
-        <MenuSortBar titel="Онигири" />
+        <MenuSortBar titel="Онигири" subject="onigiri"/>
       </section>
     </>
   );

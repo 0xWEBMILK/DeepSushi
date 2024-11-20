@@ -4,7 +4,7 @@ const DeliveryMenuHotRollsPage = () => {
   return (
     <>
         <section className="goryachie-rolly">
-            <MenuSortBar titel={"Горячие роллы"}/>
+            <MenuSortBar titel={"Горячие роллы"} subject="hot_rolls"/>
         </section>
     </>
   )

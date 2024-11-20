@@ -4,7 +4,7 @@ const DeliveryMenuNoodlesPage = () => {
   return (
     <>
       <section className="lapsha">
-        <MenuSortBar titel="Лапша, Wok & Рис" />
+        <MenuSortBar titel="Лапша, Wok & Рис" subject="noodles"/>
       </section>
     </>
   );

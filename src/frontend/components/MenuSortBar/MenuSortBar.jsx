@@ -1,4 +1,3 @@
-
 import "./MenuSortBar.css";
 import MenuCard from "../MenuCard/MenuCard";
 
@@ -10,13 +9,12 @@ import imgNew from "../../Images/eventImg-1.svg";
 import { useEffect, useState } from "react";
 
 const MenuSortBar = (props) => {
-  const { titel } = props;
+  const { titel, subject } = props;
   const [sushiItems, setSushiItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/")
+    fetch("http://127.0.0.1:8080/api/v1/" + subject)
       .then((response) => {
-        console.log(response); // Inspect the response
         return response.json();
       })
       .then((data) => setSushiItems(data));

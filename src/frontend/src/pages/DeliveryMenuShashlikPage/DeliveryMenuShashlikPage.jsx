@@ -4,7 +4,7 @@ const DeliveryMenuShashlikPage = () => {
   return (
     <>
       <section className="shashlychki">
-        <MenuSortBar titel="Китайские мини-шашлычки" />
+        <MenuSortBar titel="Китайские мини-шашлычки" subject="kebab"/>
       </section>
     </>
   );

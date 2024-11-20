@@ -5,7 +5,7 @@ const DeliveryMenuRollyPage = () => {
   return (
     <>
       <section className="rolly">
-        <MenuSortBar titel ="Роллы"/>
+        <MenuSortBar titel ="Роллы" subject="rolls"/>
       </section>
     </>
   );
