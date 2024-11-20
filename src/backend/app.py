@@ -13,7 +13,7 @@ from utils.errors import BadRequestException
 
 
 
-def create_app():
+def create_app() -> Flask:
     logger.info("Config initialising | Started")
     database_config = config['database']
     server_config = config['server']
