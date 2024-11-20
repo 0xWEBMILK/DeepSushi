@@ -16,7 +16,7 @@ import DeliveryMenuPizzaPage from "./pages/DeliveryMenuPizzaPage/DeliveryMenuPiz
 import DeliveryMenuBentoLunchPage from "./pages/DeliveryMenuBentoLunchPage/DeliveryMenuBentoLunchPage";
 import DeliveryMenuDessertPage from "./pages/DeliveryMenuDessertPage/DeliveryMenuDessertPage";
 import DeliveryMenuBabyFoodPage from "./pages/DeliveryMenuBabyFoodPage/DeliveryMenuBabyFoodPage";
-
+import PromotionPage from "./pages/PromotionPage/PromotionPage";
 
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-
           <Route index element={<YakitoriaPage />} />
+          <Route path="*" element={<YakitoriaPage />} />
           <Route path="menu-dostavki/sushi" element={<DeliveryMenuSushiPage />} />
           <Route path="menu-dostavki/sashimi" element={<DeliveryMenuSashimiPage />} />
           <Route path="menu-dostavki/rolly" element={<DeliveryMenuRollyPage />} />
@@ -41,6 +41,7 @@ function App() {
           <Route path="menu-dostavki/bento-lanch" element={<DeliveryMenuBentoLunchPage />} />
           <Route path="menu-dostavki/deserty" element={<DeliveryMenuDessertPage />} />
           <Route path="menu-dostavki/detskoe-menyu" element={<DeliveryMenuBabyFoodPage />} />
+          <Route path="/news" element={<PromotionPage />} />
           
         </Route>
       </Routes>
