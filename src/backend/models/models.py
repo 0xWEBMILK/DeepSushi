@@ -39,6 +39,7 @@ class FoodBaseModel(db.Model):
             "file_path": self.file_path,
             "price": self.price
         }
+        
 
 
 class Promotion(db.Model):
