@@ -55,7 +55,7 @@ def create_app():
     def route_not_found(e):
         return not_found()
     logger.info("Error 404 handler initialising | Successful")
-
+    
 
     logger.info("Error 405 handler initialising | Started")
     @app.errorhandler(405)
