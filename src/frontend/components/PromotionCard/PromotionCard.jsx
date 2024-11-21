@@ -10,7 +10,7 @@ const PromotionCard = ({ img, time, titel, description }) => {
           className="promotion__card__image"
         />
       </div>
-      <p className="promotion__card__time">{time}</p>
+      <p className="card__time">{time}</p>
       <a href="#" className="promotion__card__titel">
         {titel}
       </a>
