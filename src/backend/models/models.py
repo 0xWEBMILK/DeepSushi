@@ -1,11 +1,11 @@
 from database.db import db
-from datetime import datetime
 from sqlalchemy.ext.declarative import declared_attr
 
 
 from sqlalchemy.ext.declarative import declared_attr
 
-class BaseModel(db.Model):
+
+class FoodBaseModel(db.Model):
     __abstract__ = True
 
     id = db.Column(db.Integer, primary_key=True)
@@ -39,55 +39,94 @@ class BaseModel(db.Model):
             "file_path": self.file_path,
             "price": self.price
         }
+        
 
 
-class Sushi(BaseModel):
+class Promotion(db.Model):
+    __tablename__ = 'promotions'
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    title = db.Column(db.String, nullable=False)
+    description = db.Column(db.String, nullable=False)
+    date = db.Column(db.String, nullable=False)
+    file_path = db.Column(db.String, nullable=False)
+
+    def __init__(self, title, description, date, file_path):
+        self.title = title
+        self.description = description
+        self.date = date
+        self.file_path = file_path
+
+    def __repr__(self):
+        return "Promotion(title='{}', description='{}', date='{}', file_path='{}')".format(
+            self.title,
+            self.description,
+            self.date,
+            self.file_path
+        )
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'description': self.description,
+            'date': self.date,
+            'file_path': self.file_path
+        }
+
+    @classmethod
+    def from_json(cls, json):
+        return cls(json['title'], json['description'], json['date'], json['file_path'])
+
+
+class Sushi(FoodBaseModel):
     pass
 
-class Sashimi(BaseModel):
+class Sashimi(FoodBaseModel):
     pass
 
-class Rolls(BaseModel):
+class Rolls(FoodBaseModel):
     pass
 
-class HotRolls(BaseModel):
+class HotRolls(FoodBaseModel):
     pass
 
-class Onigiri(BaseModel):
+class Onigiri(FoodBaseModel):
     pass
 
-class Sets(BaseModel):
+class Sets(FoodBaseModel):
     pass
 
-class Salats(BaseModel):
+class Salats(FoodBaseModel):
     pass
 
-class Bento(BaseModel):
+class Bento(FoodBaseModel):
     pass
 
-class Desserts(BaseModel):
+class Desserts(FoodBaseModel):
     pass
 
-class Juices(BaseModel):
+class Juices(FoodBaseModel):
     pass
 
-class Kebab(BaseModel):
+class Kebab(FoodBaseModel):
     pass
 
-class MenuForKids(BaseModel):
+class MenuForKids(FoodBaseModel):
     pass
 
-class PizzaBurgers(BaseModel):
+class PizzaBurgers(FoodBaseModel):
     pass
 
-class Sausages(BaseModel):
+class Sausages(FoodBaseModel):
     pass
 
-class Soup(BaseModel):
+class Soup(FoodBaseModel):
     pass
 
-class Seafood(BaseModel):
+class Seafood(FoodBaseModel):
     pass
 
-class Noodles(BaseModel):
+class Noodles(FoodBaseModel):
     pass
+
