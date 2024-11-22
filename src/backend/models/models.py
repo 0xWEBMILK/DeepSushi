@@ -1,45 +1,46 @@
 from database.db import db
-from sqlalchemy.ext.declarative import declared_attr
 
+        
+class Food(db.Model):
+    __tablename__ = 'food'
 
-from sqlalchemy.ext.declarative import declared_attr
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
 
-
-class FoodBaseModel(db.Model):
-    __abstract__ = True
-
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String)
-    description = db.Column(db.String)
-    file_path = db.Column(db.String)
+    category = db.Column(db.String, nullable=False)
+    title = db.Column(db.String, nullable=False)
+    description = db.Column(db.String, nullable=False)
     price = db.Column(db.Integer)
+    file_path = db.Column(db.String, nullable=False)
 
-    @declared_attr
-    def __tablename__(cls):
-        return cls.__name__.lower()
-
-    def __init__(self, title, description, price):
+    def __init__(self, category, title, description, price, file_path):
+        self.category = category
         self.title = title
         self.description = description
         self.price = price
+        self.file_path = file_path
 
     def __repr__(self):
-        return "{}(title='{}', description='{}', price='{}')".format(
-            self.__class__.__name__,
+        return "Food(category='{}', title='{}', description='{}', price='{}', file_path='{}')".format(
+            self.category,
             self.title,
             self.description,
-            self.price
+            self.price,
+            self.file_path
         )
 
     def to_dict(self):
         return {
-            "id": self.id,
-            "title": self.title,
-            "description": self.description,
-            "file_path": self.file_path,
-            "price": self.price
+            'id': self.id,
+            'category': self.category,
+            'title': self.title,
+            'description': self.description,
+            'price': self.price,
+            'file_path': self.file_path
         }
-        
+
+    @classmethod
+    def from_json(cls, json):
+        return cls(json['category'], json['title'], json['description'], json['price'], json['file_path'])
 
 
 class Promotion(db.Model):
@@ -77,56 +78,3 @@ class Promotion(db.Model):
     @classmethod
     def from_json(cls, json):
         return cls(json['title'], json['description'], json['date'], json['file_path'])
-
-
-class Sushi(FoodBaseModel):
-    pass
-
-class Sashimi(FoodBaseModel):
-    pass
-
-class Rolls(FoodBaseModel):
-    pass
-
-class HotRolls(FoodBaseModel):
-    pass
-
-class Onigiri(FoodBaseModel):
-    pass
-
-class Sets(FoodBaseModel):
-    pass
-
-class Salats(FoodBaseModel):
-    pass
-
-class Bento(FoodBaseModel):
-    pass
-
-class Desserts(FoodBaseModel):
-    pass
-
-class Juices(FoodBaseModel):
-    pass
-
-class Kebab(FoodBaseModel):
-    pass
-
-class MenuForKids(FoodBaseModel):
-    pass
-
-class PizzaBurgers(FoodBaseModel):
-    pass
-
-class Sausages(FoodBaseModel):
-    pass
-
-class Soup(FoodBaseModel):
-    pass
-
-class Seafood(FoodBaseModel):
-    pass
-
-class Noodles(FoodBaseModel):
-    pass
-
