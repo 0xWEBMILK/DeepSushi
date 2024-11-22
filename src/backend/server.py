@@ -8,4 +8,4 @@ if __name__ == '__main__':
     app.run(host=server_config['host'],
             port=server_config['port'],
             debug=server_config['debug'],
-            use_reloader=True)
+            use_reloader=False)
