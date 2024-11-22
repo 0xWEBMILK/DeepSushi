@@ -7,6 +7,7 @@ from config.logger_setup import logger
 
 from blueprints.default import default_blueprint
 from blueprints.delivery_menu.delivery_menu import delivery_menu_blueprint
+from blueprints.promotions.promotions import promotions_blueprint
 
 from utils.http import bad_request, not_found, not_allowed, internal_error
 from utils.errors import BadRequestException
@@ -38,6 +39,7 @@ def create_app() -> Flask:
     logger.info("Blueprints initilising | Started")
     app.register_blueprint(default_blueprint, url_prefix=server_config['api_prefix'])
     app.register_blueprint(delivery_menu_blueprint, url_prefix=server_config['api_prefix'])
+    app.register_blueprint(promotions_blueprint, url_prefix=server_config['api_prefix'])
     logger.info("Blueprints initilising | Successful")
 
 
