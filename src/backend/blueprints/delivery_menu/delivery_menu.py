@@ -11,4 +11,4 @@ def get_food():
     list_of_subject = Food.query.all()
     subject_list = [subject.to_dict() for subject in list_of_subject]
     subject_list = list(filter(lambda subject: subject['category'] == category, subject_list))
-    return jsonify(subject_list)
+    return subject_list
