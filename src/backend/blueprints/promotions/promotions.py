@@ -7,4 +7,5 @@ promotions_blueprint = Blueprint('promotions_blueprint', __name__)
 def index():
     list_of_subject = Promotion.query.all()
     subject_list = [subject.to_dict() for subject in list_of_subject]
+
     return jsonify(subject_list)
