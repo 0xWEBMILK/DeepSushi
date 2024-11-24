@@ -1,8 +1,36 @@
 from database.db import db
 
         
+class City(db.Model):
+    __tablename__ = 'cities'
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    title = db.Column(db.String, nullable=False)
+
+    def __init__(self, title):
+        self.title = title
+
+    def __repr__(self):
+        return "City(title='{}')".format(
+            self.title,
+        )
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'category': self.category,
+            'title': self.title,
+            'description': self.description,
+            'price': self.price,
+            'file_path': self.file_path
+        }
+
+    @classmethod
+    def from_json(cls, json):
+        return cls(json['category'], json['title'], json['description'], json['price'], json['file_path'])
+
 class Food(db.Model):
-    __tablename__ = 'food'
+    __tablename__ = 'cities'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
 
