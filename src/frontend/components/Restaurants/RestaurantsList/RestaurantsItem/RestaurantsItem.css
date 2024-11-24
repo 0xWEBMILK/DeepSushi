@@ -1,0 +1,15 @@
+.restaurants__item {
+  margin-bottom: 14px;
+}
+
+.restaurants__link {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #c31b30;
+  }
+}

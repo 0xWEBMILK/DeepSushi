@@ -3,7 +3,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SideBar from "../SideBar/SideBar";
 
-import "./Layout.css"
+import "./Layout.css";
+import Present from "../Main/Present/Present";
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <SideBar />
+      <Present />
       <Footer />
     </>
   );

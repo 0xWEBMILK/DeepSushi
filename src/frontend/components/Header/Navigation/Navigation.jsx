@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   const menuItems = [
     { id: 1, text: "Акции", href: "news/" },
-    { id: 2, text: "Рестораны", href: "#" },
+    { id: 2, text: "Рестораны", href: "restaurants/" },
     { id: 3, text: "О доставке", href: "#" },
     { id: 4, text: "Мальдивы ждать не будут!", href: "#", highlighted: true },
   ];

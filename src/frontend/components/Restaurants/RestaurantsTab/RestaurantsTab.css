@@ -1,0 +1,29 @@
+.restaurants__choose {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.restaurants__choose__link {
+    color: #C0C0C0;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.restaurants__choose__link.active {
+  color: #ffff00; /* Жёлтый цвет текста для активной ссылки */
+  font-weight: bold;
+  position: relative;
+}
+
+.restaurants__choose__link.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffff00; /* Жёлтая линия под текстом */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}

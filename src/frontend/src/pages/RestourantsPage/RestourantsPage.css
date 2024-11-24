@@ -1,0 +1,14 @@
+.restaurants__titel {
+  font-size: 3rem;
+  line-height: 36px;
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  padding: 32px 0;
+}
+
+.restaurants__sortbar {
+    display: flex;
+    align-items:  center;
+    gap: 3rem;
+    margin-bottom: 64px;
+}

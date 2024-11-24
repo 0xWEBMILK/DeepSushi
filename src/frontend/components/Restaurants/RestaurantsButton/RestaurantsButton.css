@@ -1,0 +1,8 @@
+.restaurants__sortbar__sort__btn {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #888888;
+    background-color: transparent;
+    border: 1px solid #888888;
+    padding: 14px 18px;
+}

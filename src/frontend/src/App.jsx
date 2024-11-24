@@ -17,6 +17,7 @@ import DeliveryMenuBentoLunchPage from "./pages/DeliveryMenuBentoLunchPage/Deliv
 import DeliveryMenuDessertPage from "./pages/DeliveryMenuDessertPage/DeliveryMenuDessertPage";
 import DeliveryMenuBabyFoodPage from "./pages/DeliveryMenuBabyFoodPage/DeliveryMenuBabyFoodPage";
 import PromotionPage from "./pages/PromotionPage/PromotionPage";
+import RestaurantsPage from "./pages/RestourantsPage/RestaurantsPage";
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
           <Route path="menu-dostavki/deserty" element={<DeliveryMenuDessertPage />} />
           <Route path="menu-dostavki/detskoe-menyu" element={<DeliveryMenuBabyFoodPage />} />
           <Route path="/news" element={<PromotionPage />} />
+          <Route path="/restaurants" element={<RestaurantsPage />} />
+          
           
         </Route>
       </Routes>
