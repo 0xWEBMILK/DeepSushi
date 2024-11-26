@@ -40,7 +40,6 @@ def create_app() -> Flask:
     app.register_blueprint(default_blueprint, url_prefix=server_config['api_prefix'])
     app.register_blueprint(delivery_menu_blueprint, url_prefix=server_config['api_prefix'])
     app.register_blueprint(promotions_blueprint, url_prefix=server_config['api_prefix'])
-    
     logger.info("Blueprints initilising | Successful")
 
 
