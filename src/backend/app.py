@@ -12,7 +12,7 @@ from blueprints.promotions.promotions import promotions_blueprint
 from utils.http import bad_request, not_found, not_allowed, internal_error
 from utils.errors import BadRequestException
 
-
+# TODO: Migrate code from flask_sqlalchemy to SQLAlchemy
 
 def create_app() -> Flask:
     logger.info("Config initialising | Started")
