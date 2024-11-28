@@ -11,8 +11,8 @@ const FooterNavigationDelivery = () => {
   ];
   return (
     <>
-      <h3 className="footer__delivery__titel">Доставка</h3>
-      <ul className="footer__list__delivery__list">
+      <h3 className="footer__delivery__titel footer__item__text">Доставка</h3>
+      <ul className="footer__list__delivery__list footer__item__text">
         {listItems.map((item) => (
           <li key={item.id} className={item.className || ""}>
             <a className="footer__item__delivery__list__link" href="#">

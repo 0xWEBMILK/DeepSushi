@@ -1,0 +1,24 @@
+.footer__list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 22px;
+}
+
+.footer__item__text {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1033px) {
+  .footer__list {
+    text-align: center;
+  }
+
+  .footer__item__text {
+    text-align: center;
+  }
+
+  .footer__mobile__app {
+    justify-content: center;
+  }
+}

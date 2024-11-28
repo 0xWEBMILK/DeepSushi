@@ -3,6 +3,17 @@
   align-items: center;
   justify-content: space-between;
   color: white;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  white-space: nowrap;
+}
+
+.navbar::-webkit-scrollbar {
+  height: 6px; /* Высота полосы прокрутки */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: #cccccc; /* Цвет слайдера */
 }
 
 .navbar__menu {
@@ -27,7 +38,7 @@
   text-transform: uppercase;
   line-height: 64px;
   font-weight: 400;
-  font-size: clamp(0.375rem, 0.275rem + 0.5vw, 0.875rem);
+  font-size: 14px;
   color: #fff;
   transition: color 0.2s ease-in-out;
 

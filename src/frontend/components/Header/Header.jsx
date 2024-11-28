@@ -1,10 +1,8 @@
+import { Link } from "react-router-dom";
 import logo from "../../Images/Logo.svg";
-
 import Navigation from "./Navigation/Navigation";
 import Basket from "./Basket/Basket";
-
 import "./Header.css";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (

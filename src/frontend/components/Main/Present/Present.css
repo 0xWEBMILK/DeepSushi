@@ -28,7 +28,6 @@
 
 .present__form__text {
   display: flex;
-  gap: 1;
   justify-content: space-between;
   align-items: start;
   gap: 20px;
@@ -90,5 +89,25 @@
 
   &:hover {
     border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .present__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .present__titel {
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .present__form__description {
+    text-align: start;
   }
 }

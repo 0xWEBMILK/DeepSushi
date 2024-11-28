@@ -1,6 +1,7 @@
 import headerLocation from "../../../Images/header-location.svg";
 import clean from "../../../Images/clean.svg";
 import cart from "../../../Images/cart.svg";
+import "./Basket.css"
 
 const Basket = () => {
   return (

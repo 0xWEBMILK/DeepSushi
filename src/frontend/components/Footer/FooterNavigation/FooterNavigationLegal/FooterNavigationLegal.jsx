@@ -9,9 +9,8 @@ const FooterNavigationLegal = () => {
   ];
   return (
     <>
-      <ul className="footer__item__legal__list">
-        <h3 className="footer__legal__titel">Юридическая информация</h3>
-
+      <h3 className="footer__legal__titel footer__item__text">Юридическая информация</h3>
+      <ul className="footer__item__legal__list footer__item__text">
         {listItem.map((item) => (
           <li key={item.id}>
             <a className="footer__item__legal__list__link" href="#">

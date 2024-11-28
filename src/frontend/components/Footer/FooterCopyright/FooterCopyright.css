@@ -29,8 +29,7 @@
 }
 
 .footer__copyright__messenger__tg {
-
-    padding: 10px;
+  padding: 10px;
 }
 
 .footer__copyright__messenger__vk::before {
@@ -43,4 +42,23 @@
   content: "";
   border-right: 1px solid #44474a;
   padding: 0 16px 35px 16px;
+}
+
+@media (max-width: 1033px) {
+  .footer__copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__copyright__text {
+    margin: 0;
+    padding: 10px 10px;
+  }
+
+  .footer__copyright__messenger__vk::after {
+    display: none;
+  }
+  .footer__copyright__messenger__vk::before {
+    display: none;
+  }
 }

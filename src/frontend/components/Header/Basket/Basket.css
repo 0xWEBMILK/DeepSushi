@@ -1,0 +1,3 @@
+.header__adress__text, .header__basket__cart__text {
+    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+}

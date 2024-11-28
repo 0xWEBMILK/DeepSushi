@@ -14,8 +14,8 @@ const FooterNavigationYakitoria = () => {
   ];
   return (
     <>
-      <h3 className="footer__item__titel">Якитория</h3> <br />
-      <ul className="footer__item__yakitoria__list">
+      <h3 className="footer__item__titel footer__item__text">Якитория</h3> <br />
+      <ul className="footer__item__yakitoria__list footer__item__text">
         {List.map((item) => (
           <li key={item.id}>
             <a className="footer__item__yakitoria__list__link" href="#">
